@@ -91,13 +91,19 @@ header.scrolled {
 }
 
 .overlay {
+    /*fondo de la pagina */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f6f7f5;
+    background-image: url("Images/FondoValboria1.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
 }
+
+
 
 .hero-content {
     z-index: 1;
@@ -105,7 +111,7 @@ header.scrolled {
 }
 
 .hero-content h1 {
-    font-size: 2em;
+    font-size: 5em;
     margin-bottom: 20px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -143,13 +149,7 @@ header.scrolled {
     box-shadow: 0 8px 25px rgba(198, 121, 218, 0.5);
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: fadeIn 2s ease forwards;
-}
+
 
 .about {
     padding: 80px 50px;
@@ -380,7 +380,7 @@ button.cta:hover{
         border: none;
         background: transparent;
         /* Color de las tres rayitas de menu*/
-        color: #f5eff5;
+        color: rgb(7, 7, 7);
         outline: none;
         font-size: 1.7em;
         cursor: pointer;
@@ -417,8 +417,8 @@ button.cta:hover{
         height: 100%;
         /* Fondo la lista que se abre cuando se hace click en 
         en las tres rayitas*/
-        background-color: #ee62b6;
-        color: #ffffff;
+        background-color: #ecc9df;
+        color: #080808;
         padding: 46px;
         flex-direction: column;
         padding-top: 80px;
@@ -437,7 +437,7 @@ button.cta:hover{
 
     .menu.opened button{
         /* X para salir del menu */
-        color: #fff;
+        color: #e649d1;
     }
 }
 
